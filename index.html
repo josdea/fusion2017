@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Math Presentation - Reveal JS</title>
+
+
+    <link rel='stylesheet prefetch' href='./css/reveal.css'>
+    <link rel='stylesheet prefetch' href='./css/white.css'>
+    <link rel='stylesheet prefetch' href='./css/style.css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+
+
+</head>
+
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="stackedit" data-autoslide="276000">
+                <p>Accessible Content Creation in Math and Chemistry</p>
+                <!-- <video width="95%" controls autoplay loop>
+  <source src="./assets/stackedit.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video> -->
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/oDlSHOq1kqU?rel=0&amp;showinfo=0&amp;start=16"
+  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1><small>Accessible Math Using Markdown</small></h1>
+                <blockquote>Create accessible documents and content that can be easily edited in Brightspace (D2L) and can be read by screenreaders.</blockquote>
+                <p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] </p>
+            </section>
+            <section id="what">
+                <h2>What is Markdown?</h2>
+                <blockquote>MarkDown is a text-to-HTML conversion tool. MarkDown allows you to write using an easy-to read, easy-to-write plain text format, then converts it to structurally valid XHTML (or HTML). <small>-daringfireball.net</small></blockquote>
+            </section>
+            <section id="look">
+                <h2>What Does Markdown Look Like?</h2>
+                <pre><code># This is a Heading 1
+
+## Lists (this is a heading 2)
+* Item 1 with *Italics*
+* Item 2 with **Bold**
+ * Sub-item 1
+* Item 3
+
+This is a link to Google:
+    [Google Search](google.com)
+This is an image:
+    ![alternate text goes here](/location/of/image.jpg)           
+           </code></pre>
+
+            </section>
+            <section id="why">
+                <h2>Why Markdown?</h2>
+                <p>Markdown is <em>plain-text</em>: margins, tab stops, page breaks, extra spacing, and formatting are all unsupported, ignored and therefore dropped. This is limiting but also helpful with <strong>accessibility</strong>. </p>
+
+            </section>
+            <section>
+                <h2>Why Markdown cont..</h2>
+                <p>Multiple spaces, or line breaks in a markdown file are ignored when converted to an HTML document. A Word document copied into a markdown editor is stripped of all formatting and flourishes. </p>
+                <p>Formatting and styles can be added once we have an HTML file, but Markdown lets you focus on <em>content first.</em></p>
+
+
+            </section>
+            <section id="example">
+                <h2 id="math">Math Example</h2>
+                <p>Right click on the math formula to see more options.</p>
+                <p>\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx\]</p>
+                <div class="fragment">
+                    <hr>
+                    <p>Listen to the Jaws screenreader process the above formula:</p>
+                    <audio controls>
+                        <source src="./assets/mathexample.mp3" type="audio/mp3"> Your browser does not support the audio element.
+                        </audio>
+                </div>
+                <div class="fragment">
+                    <hr>
+                    <p>The above formula is written using <em>tex</em> or <em>latex</em> code. <code>\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx</code></p>
+                    <p><small>Don't worry we don't need to learn <em>tex</em> code!</small></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Wiris HTML Editor</h2>
+
+                <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
+                <img src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
+            </section>
+
+            <section id="further1">
+                <h2>Further Reading and Tools</h2>
+                <form action="https://codepen.io/pen/define" method="POST" target="_blank">
+                    <input type="hidden" name="data" value='{"title": "Markdown Math", "editors": "100", "html_pre_processor": "markdown", "css_external": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css", "js_external": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML", "head": "<meta name=\"viewport\" content=\"width=device-width\">", "css": "body{padding:5px;}", "html": "<!--<div class=\"container\">-->\n\n# Put Markdown Here\n\n\\\\(x^2+14 = 2\\\\)\n\n\<!--</div>-->"}'>
+                  
+                    <input type="submit" value="New Codepen with Markdown / Mathjax / Boostrap">
+                  </form>
+                <ul>
+                    <li>Our <a target="_blank" href="http://thejoshdean.com/markdowneditor/">Custom Markdown Previewer</a></li>
+                   
+                  
+                    <li>Our <a target="_blank" href="https://josdea.github.io/markdowneditor/reference.html">Markdown Reference Sheet</a>- printable reference sheet</li>
+                    <li>Our <a target="_blank" href="http://codepen.io/josdea/pen/eBdYpo">Chemistry Examples</a> - MathJax with mhchem package </li>
+                    <!-- <li>Our Accessible <a target="_blank" href="https://github.com/josdea/htmltemplates">HTML Course Templates</a> for Brightspace (D2L).</li> -->
+                    <li>Our <a target="_blank" href="https://psccmath.github.io/math1830/u1s1.html">Applied Calculus Course</a> - created in markdown</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h2 id="further2">Further Reading and Tools cont...</h2>
+
+                <h3>Further Reading</h3>
+                
+                <ul>
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Markdown">Markdown on Wikipedia</a> - a history and more</li>
+                    <li><a target="_blank" href="https://www.mathjax.org/">MathJax Main Site</a>- math rendering engine</li>
+                    <li><a target="_blank" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Guide</a> - by Github</li>
+                    <li>Markdown<a target="_blank" href="http://www.tablesgenerator.com/markdown_tables">Table Generator</a> and manipulation</li>
+                    <li><a target="_blank" href="https://blog.ghost.org/markdown/">More Markdown Tips and Tricks</a> - blog post</li>
+                    
+                    <li>Code for 'Head' Section of any webpage with math
+                        <ul></li><li><small><code>&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML&#x22;&#x3E;&#x3C;/script&#x3E;</code></small></li></ul></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="further3">Further Reading and Tools cont...</h2>
+
+                <h3>Applications</h3>
+                <ul>
+                        <li><a target="_blank" href="https://stackedit.io/">Stackedit.io</a> - online markdown editor</li>
+                        <li><a target="_blank" href="http://dillinger.io/">Dillinger.io</a> - online markdown editor</li>
+
+                    <li>A <a target="_blank" href="https://www.sitepoint.com/best-markdown-editors-windows/">list of desktop markdown editors</a> - Windows</li>
+                    <li>A <a target="_blank" href="http://www.applegazette.com/mac/best-markdown-editors-macos/">list of desktop markdown editors</a> - Mac / macOS</li>
+                    <li>
+                      <a target="_blank" href="http://thejoshdean.com/d2ltools/">Other D2L Tools</a> - Gradebook Generator, Enroll Generator, Objectives Generator, etc.</li>
+                      <li>
+                        This presentation on Github <a target="_blank" href="https://github.com/josdea/d2lfusion">https://github.com/josdea/d2lfusion</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
+    <script src='./js/reveal.js'></script>
+
+    <script src="./js/index.js"></script>
+
+<style>
+  #doorbell-button {
+    background-color: #117BB8;
+  }
+</style>
+<script type="text/javascript">
+  window.doorbellOptions = {
+    strings: {
+      "feedback-button-text": "send the presenters a question",
+      title: "Accessible Content with Markdown",
+  
+      "feedback-textarea-placeholder": "Need more information on this presentation or its content...",
+  
+      "email-input-placeholder": "Your email address",
+      tags: "fusion2017",
+      "submit-button-text": "Send",
+      "message-success": "Thanks, we will contact you as soon as possible!",
+      "message-error-missing-email": "Your email address is required",
+      "message-error-invalid-email": "Invalid email address",
+      "message-error-missing-message": "Your message is required",
+      "message-error-message-too-short": "Your message is too short"
+    },
+  
+    appKey: "M7lSIWcucfDnhDPrlx2X6Gy6aJ78pe0W81EnbMzU0Zwf8LQL6sUBuJ8jqBQH19F1"
+  };
+  (function(w, d, t) {
+    var hasLoaded = false;
+    function l() {
+      if (hasLoaded) {
+        return;
+      }
+      hasLoaded = true;
+      window.doorbellOptions.windowLoaded = true;
+      var g = d.createElement(t);
+      g.id = "doorbellScript";
+      g.type = "text/javascript";
+      g.async = true;
+      g.src = "https://embed.doorbell.io/button/4956?t=" + new Date().getTime();
+      (d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0])
+        .appendChild(g);
+    }
+    if (w.attachEvent) {
+      w.attachEvent("onload", l);
+    } else if (w.addEventListener) {
+      w.addEventListener("load", l, false);
+    } else {
+      l();
+    }
+    if (d.readyState == "complete") {
+      l();
+    }
+  })(window, document, "script");
+  
+  function showDoorbellModal() {
+    doorbell.show(); // The doorbell object gets created by the doorbell.js script
+  }
+</script>
+<script>
+  document.getElementById("doorbell-powered-by").style.display = "none";
+</script>
+
+</body>
+
+</html>
